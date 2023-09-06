@@ -10,12 +10,12 @@ UCLASS()
 class MIAWPOCALIPSETEST_API AZoneUnlockingManager : public AActor
 {
 	GENERATED_BODY()
-private: 
+private:
 
 	UPROPERTY(EditAnywhere)
 	UObject* UnlockedZones[7];
 	//Events ZoneCompletionEvents[];
-public:	
+public:
 	// Sets default values for this actor's properties
 	AZoneUnlockingManager();
 
@@ -23,11 +23,11 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	UFUNCTION(BlueprintCallable)
-	void UnlockZone(int32 ZoneIndex);
+	void UnlockZone(UPARAM(ref) int32& ZoneIndex);
 	UFUNCTION(BlueprintCallable)
-	bool IsZoneUnlocked(int32 ZoneIndex);
+	bool IsZoneUnlocked(UPARAM(ref)int32& ZoneIndex);
 	UFUNCTION(BlueprintCallable)
-	void HandleZoneCompletion(int32 ZoneIndex);
+	void HandleZoneCompletion(UPARAM(ref) int32& ZoneIndex);
 
 
 public:	

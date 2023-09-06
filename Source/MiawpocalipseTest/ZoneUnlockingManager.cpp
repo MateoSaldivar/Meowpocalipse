@@ -20,7 +20,7 @@ void AZoneUnlockingManager::BeginPlay()
 /**
 * @brief Unlocks the specified zone
 */
-void AZoneUnlockingManager::UnlockZone(int32 ZoneIndex)
+void AZoneUnlockingManager::UnlockZone(int32& ZoneIndex)
 {
 	AActor* tmpActor = Cast<AActor>(UnlockedZones[ZoneIndex]);
 	tmpActor->SetActorEnableCollision(false);
@@ -28,7 +28,7 @@ void AZoneUnlockingManager::UnlockZone(int32 ZoneIndex)
 /**
 * @brief Checks if the specified zone is unlocked.
 */
-bool AZoneUnlockingManager::IsZoneUnlocked(int32 ZoneIndex)
+bool AZoneUnlockingManager::IsZoneUnlocked(int32& ZoneIndex)
 {
 	AActor* tmpActor = Cast<AActor>(UnlockedZones[ZoneIndex]);
 	return tmpActor->GetActorEnableCollision();
@@ -36,7 +36,7 @@ bool AZoneUnlockingManager::IsZoneUnlocked(int32 ZoneIndex)
 /**
 * @brief Handles the completion of the specified zone.
 */
-void AZoneUnlockingManager::HandleZoneCompletion(int32 ZoneIndex)
+void AZoneUnlockingManager::HandleZoneCompletion(int32& ZoneIndex)
 {
 
 }

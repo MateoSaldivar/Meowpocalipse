@@ -23,13 +23,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	UFUNCTION(BlueprintCallable)
-	void OpenBarrier(int& IdBarrier);
+	void OpenBarrier(UPARAM(ref) int& IdBarrier);
 	UFUNCTION(BlueprintCallable)
-	void CloseBarrier(int& IdBarrier);
+	void CloseBarrier(UPARAM(ref) int& IdBarrier);
 	UFUNCTION(BlueprintCallable)
-	void ToggleBarrier(int& IdBarrier);
+	void ToggleBarrier(UPARAM(ref) int& IdBarrier);
 	UFUNCTION(BlueprintCallable)
-	bool IsBarrierOpen(int& IdBarrier);
+	bool IsBarrierOpen(UPARAM(ref) int& IdBarrier);
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
