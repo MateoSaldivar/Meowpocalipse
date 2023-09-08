@@ -72,3 +72,13 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Source/MiawpocalipseTest/ALevelManager.cpp
+Source/MiawpocalipseTest/ALevelManager.h
+Source/MiawpocalipseTest/ARoundManager.cpp
+Source/MiawpocalipseTest/ARoundManager.h
+Source/MiawpocalipseTest/MiawpocalipseTest.Build.cs
+Source/MiawpocalipseTestEditor.Target.cs
+Source/MiawpocalipseTest/MiawpocalipseTest.cpp
+Source/MiawpocalipseTest.Target.cs
+Source/MiawpocalipseTest/MiawpocalipseTest.h
+.vsconfig
